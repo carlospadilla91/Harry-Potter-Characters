@@ -1,7 +1,17 @@
 "use strict"
 const characterList = document.getElementById("characterList");
+const searchBar = document.getElementById("searchBar");
 let hpCharacters = [];
 
+searchBar.addEventListener('keyup', (e) => {
+    const userInput = e.target.value.toLowerCase();
+    const filteredCharacters = hpCharacters.filter( character => {
+        return character.name.toLowerCase().includes(userInput) || character.house.toLowerCase().includes(userInput);
+    })
+    displayCharacters(filteredCharacters);
+})
+
+// function to load the characters from API using async and await
 const loadCharacters = async () => {
     try {
         const res = await fetch('http://hp-api.herokuapp.com/api/characters');
