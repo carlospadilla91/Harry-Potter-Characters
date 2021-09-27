@@ -4,6 +4,7 @@ const searchBar = document.getElementById("searchBar");
 // const characters = ;
 let hpCharacters = [];
 
+// event on keyup that displays characters by user search term
 searchBar.addEventListener('keyup', (e) => {
     const userInput = e.target.value.toLowerCase();
     const filteredCharacters = hpCharacters.filter(character => {
@@ -14,12 +15,13 @@ searchBar.addEventListener('keyup', (e) => {
 
 // console.log(characters);
 
-const characters = document.getElementsByClassName("character");
-for (let i = 0; i < characters.length; i += 1) {
-    characters[i].addEventListener('click', (e) => {
-        alert('clickced');
-    })
-}
+//TODO: in progress click event for each character card and show more api data
+// const characters = document.getElementsByClassName("character");
+// for (let i = 0; i < characters.length; i += 1) {
+//     characters[i].addEventListener('click', (e) => {
+//         alert('clickced');
+//     })
+// }
 
 
 // function to load the characters from API using async and await
