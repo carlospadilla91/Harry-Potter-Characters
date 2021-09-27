@@ -11,7 +11,7 @@
 ----
 
 ## Description
-A front-end single page application developed to provide user-friendly experience with a dynamic search bar when searching for Harry Potter characters
+A front-end single page application developed with HP-API to provide user-friendly experience with a dynamic search bar when searching for Harry Potter characters
 #### Built With:
 * HTML
 * CSS
